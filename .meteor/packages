@@ -9,3 +9,5 @@ autopublish
 insecure
 ukabu:material-ui
 reactjs:react
+meteorhacks:npm
+cosmos:browserify
