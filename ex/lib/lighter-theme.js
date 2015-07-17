@@ -1,9 +1,5 @@
 'use strict';
 
-var Colors = require('../colors');
-var Spacing = require('../spacing');
-var ColorManipulator = require('../../utils/color-manipulator');
-
 /**
  *  Light Theme is the default theme used in material-ui. It is guaranteed to
  *  have all theme variables needed for every component. Variables not defined
