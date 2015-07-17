@@ -15,7 +15,9 @@ LighterTheme = {
   contentFontFamily: 'Roboto, sans-serif',
   getPalette: function getPalette() {
     return {
-      primary1Color: Colors.cyan500,
+      // test that it works grey500 instead of cyan500
+      // ThemeManager.setTheme(LighterTheme);
+      primary1Color: Colors.grey500,
       primary2Color: Colors.cyan700,
       primary3Color: Colors.cyan100,
       accent1Color: Colors.pinkA200,
