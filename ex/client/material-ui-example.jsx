@@ -1,5 +1,5 @@
-var ThemeManager = new mui.Styles.ThemeManager();
-
+ThemeManager = new mui.Styles.ThemeManager();
+//ThemeManager.setTheme(ThemeManager.types.DARK);
 var {
   AppBar,
   DatePicker,
