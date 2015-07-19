@@ -50,7 +50,8 @@ if (Meteor.isClient) {
 
     $(document.body).html("<div id='container'></div>");
     React.render(<App />, document.getElementById("container"));
-    Meteor.call( "changeTheme", LighterTheme, function ( error, result ) {
+    changeTheme = "changeTheme"
+    Meteor.call( changeTheme, changeTheme, LighterTheme, function ( error, result ) {
       if ( error ) {
         console.log( "error", error );
       }
