@@ -30,7 +30,16 @@ var App = React.createClass({
     );
   }
 });
-
+function call(name, payload) {
+  Meteor.call( name, name, payload, function ( error, result ) {
+    if ( error ) {
+      console.log( "error", error );
+    }
+    if ( result ) {
+      return(result)
+    }
+  } );
+}
 if (Meteor.isClient) {
   Meteor.startup(function () {
     var WebFontConfig = {
@@ -50,14 +59,9 @@ if (Meteor.isClient) {
 
     $(document.body).html("<div id='container'></div>");
     React.render(<App />, document.getElementById("container"));
-    changeTheme = "changeTheme"
-    Meteor.call( changeTheme, changeTheme, LighterTheme, function ( error, result ) {
-      if ( error ) {
-        console.log( "error", error );
-      }
-      if ( result ) {
+    name = "changeTheme"
+    payload = "LighterTheme"
+    console.log(call(name,payload));
 
-      }
-    } );
   });
 }
