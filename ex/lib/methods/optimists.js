@@ -1,8 +1,9 @@
+log = loglevel.createLogger('reunion.optimists', 'trace');
 Meteor.methods( {
   changeTheme: function ( name, theme ) {
     name = name || 'changeTheme'
     if ( Meteor.isClient ) {
-      console.log( name + ' isClient' );
+      log.trace( name + ' isClient' );
       try {
         ThemeManager.setTheme( eval( theme ) );
       } catch ( e ) {
@@ -14,7 +15,7 @@ Meteor.methods( {
 
     }
     if ( Meteor.isServer ) {
-      console.log( name + ' isServer' );
+      log.trace( name + ' isServer' );
       return 'serverReturned'
     }
   }

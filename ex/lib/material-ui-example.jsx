@@ -1,4 +1,6 @@
 ThemeManager = new mui.Styles.ThemeManager();
+log = loglevel.createLogger('reunion.material-ui', 'trace');
+
 //ThemeManager.setTheme(ThemeManager.types.DARK);
 //ThemeManager.setTheme(LighterTheme);
 // in console..
