@@ -33,6 +33,8 @@ mongo@1.1.0
 npm-container@1.0.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
+practicalmeteor:chai@1.9.2_3
+practicalmeteor:loglevel@1.2.0_1
 random@1.0.3
 react@0.1.0
 react-meteor-data@0.1.0
