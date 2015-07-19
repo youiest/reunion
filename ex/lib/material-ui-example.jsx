@@ -1,5 +1,5 @@
 ThemeManager = new mui.Styles.ThemeManager();
-//ThemeManager.setTheme(ThemeManager.types.DARK); 
+//ThemeManager.setTheme(ThemeManager.types.DARK);
 //ThemeManager.setTheme(LighterTheme);
 // in console..
 var {
