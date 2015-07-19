@@ -64,6 +64,6 @@ if (Meteor.isClient) {
     name = "changeTheme"
     payload = "LighterTheme"
     L(call(name,payload));
-    Logstar.critical('Logstar.isLocal',Logstar.isLocal,call(name,payload))
+    //Logstar.critical('Logstar.isLocal',Logstar.isLocal,call(name,payload))
   });
 }

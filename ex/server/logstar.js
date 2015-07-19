@@ -1,4 +1,8 @@
 Logstar.allow( {
+  trace: function ( userId ) {
+    // Allow all clients to log
+    return true;
+  },
   log: function ( userId ) {
     // Allow all clients to log
     return true;
