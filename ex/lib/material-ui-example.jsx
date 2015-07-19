@@ -1,5 +1,5 @@
 ThemeManager = new mui.Styles.ThemeManager();
-//ThemeManager.setTheme(ThemeManager.types.DARK); 
+//ThemeManager.setTheme(ThemeManager.types.DARK);
 // in console..
 var {
   AppBar,
@@ -49,5 +49,13 @@ if (Meteor.isClient) {
 
     $(document.body).html("<div id='container'></div>");
     React.render(<App />, document.getElementById("container"));
+    Meteor.call( "changeTheme", LighterTheme, function ( error, result ) {
+      if ( error ) {
+        console.log( "error", error );
+      }
+      if ( result ) {
+
+      }
+    } );
   });
 }
