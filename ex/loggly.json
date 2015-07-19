@@ -1,0 +1,7 @@
+{
+"loggly": {
+    "token": "b07440c6-a1f8-4436-b2ee-f59c67f3b222",
+    "tags": ["test"],
+    "subdomain": "youiestllc"
+  }
+}

@@ -24,3 +24,4 @@ jquery
 reload
 autoupdate
 practicalmeteor:loglevel
+dispatch:logstar

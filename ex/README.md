@@ -1,0 +1,2 @@
+!!!
+meteor --settings loggly.json

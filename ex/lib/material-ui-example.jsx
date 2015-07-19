@@ -35,7 +35,7 @@ var App = React.createClass({
 function call(name, payload) {
   Meteor.call( name, name, payload, function ( error, result ) {
     if ( error ) {
-      console.log( "error", error );
+      log.error( "error", error );
     }
     if ( result ) {
       return(result)
@@ -63,7 +63,7 @@ if (Meteor.isClient) {
     React.render(<App />, document.getElementById("container"));
     name = "changeTheme"
     payload = "LighterTheme"
-    console.log(call(name,payload));
-
+    L(call(name,payload));
+    Logstar.critical('Logstar.isLocal',Logstar.isLocal,call(name,payload))
   });
 }
