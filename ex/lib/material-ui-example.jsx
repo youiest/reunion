@@ -63,6 +63,7 @@ if (Meteor.isClient) {
     React.render(<App />, document.getElementById("container"));
     name = "changeTheme"
     payload = "LighterTheme"
+    //renaming
     L(call(name,payload));
     //Logstar.critical('Logstar.isLocal',Logstar.isLocal,call(name,payload))
   });
